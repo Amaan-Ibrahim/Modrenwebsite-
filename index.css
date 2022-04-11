@@ -27,14 +27,17 @@ header{
 .logo h1:first-child{
     text-transform: uppercase;
     font-size: 1.6rem;
-    animation: agypichy 3s linear infinite;
+    animation: myanim 4s infinite;
     animation-direction: alternate;
-    position: relative;
 }
-@keyframes agypichy{
-    from{padding-left: 40px;}
-    to{padding-left: 40px;}
-}
+@keyframes myanim {
+    50% {
+       padding-left: 27%;
+    }
+    50% {
+        padding-right: 27%;
+     }
+ }
 nav{
     width: 60%;
     display: flex;
@@ -57,17 +60,12 @@ nav a:first-child{
     top: 110%;
     left: 0%;
     width: 100%;
+    border-bottom: 2px solid #4458dc; 
     height: 2px;
     /* transition: all 0.4s linear; */
     /* animation-direction: alternate; */
-    border-bottom: 2px solid #4458dc;
-
-
 }
-/* .anchor::before :hover{
-    width: 100%;
 
-} */
 main{
     height: 80vh;
     display: flex; 
@@ -128,6 +126,7 @@ main{
     border: double 2px transparent;
     box-shadow: 0 10px 30px rgba(118, 85, 225, .3);
 }
+
 .leftside .btn2{
     color: #222;
     border: 2px solid #4458dc;
